@@ -33,5 +33,7 @@ contract BadAuction is AuctionInterface {
 	}
 
 	/* Give people their funds back */
-	function () payable {}
+	function () payable {
+		revert();
+	}
 }
